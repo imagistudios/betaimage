@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="text-input">
-        <label for="prompt">Enter text:</label>
-        <input type="text" id="prompt" name="prompt" required>
-        <button type="submit" onclick="generateImage()">Generate Image</button>
-    </form>
-    <div id="image-container"></div>
-    <script src="main.js"></script>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="prompt-input" placeholder="Enter text prompt">
+            <button id="generate-button">Generate</button>
+        </div>
+        <div class="image-container">
+            <p class="loading-message" id="loading-message">Loading...</p>
+            <img id="generated-image" src="" alt="Generated Image">
+        </div>
+    </div>
 </body>
+<script src="main.js"></script>
 </html>
