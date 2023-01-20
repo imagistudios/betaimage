@@ -1,0 +1,18 @@
+#text-input {
+    margin: 20px;
+}
+
+#text-area {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#generate-button {
+    margin-top: 10px;
+}
+
+#image-container {
+    margin: 20px;
+}
