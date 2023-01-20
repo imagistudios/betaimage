@@ -10,7 +10,7 @@ $seed = 123456789;
 $curl = curl_init();
 
 curl_setopt_array($curl, [
-    CURLOPT_URL => "https://api.leapml.dev/api/v1/images/models/8b1b897c-d66d-45a6-b8d7-8e32421d02cf/inferences",
+    CURLOPT_URL => "",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
@@ -28,7 +28,7 @@ curl_setopt_array($curl, [
     CURLOPT_HTTPHEADER => [
         "accept: application/json",
         "content-type: application/json",
-        "authorization: Bearer 7751649d-ae90-4cb0-8ec6-f63d8e74fe3c"
+        "authorization: "
     ],
 ]);
 
