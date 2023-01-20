@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="text-input" action="generate-image.php" method="post">
-        <textarea id="text-area" placeholder="Enter text here"></textarea>
-        <button id="generate-button" onclick="generateImage()">Generate Image</button>
+    <form id="text-input">
+        <label for="prompt">Enter text:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit" onclick="generateImage()">Generate Image</button>
     </form>
     <div id="image-container"></div>
     <script src="main.js"></script>
