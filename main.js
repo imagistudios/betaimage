@@ -23,7 +23,7 @@ generateButton.addEventListener("click", function() {
     // Prepare the headers for the API call
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
-    headers.append("Authorization", "Bearer 0903eef6-72a5-4a7c-803f-11e3086cc1f5");
+    headers.append("Authorization", "");
 
     // Prepare the fetch options
     const options = {
@@ -33,7 +33,7 @@ generateButton.addEventListener("click", function() {
     };
 
     // Make the API call
-    fetch("https://api.leapml.dev/api/v1/images/models/8b1b897c-d66d-45a6-b8d7-8e32421d02cf/inferences", options)
+    fetch("", options)
     .then(response => response.json())
     .then(data => {
         // Get the image URL from the API response
